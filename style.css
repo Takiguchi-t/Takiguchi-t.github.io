@@ -1,0 +1,13 @@
+<style type="text/css">
+
+//言語切り替え表示のデフォルトスタイル
+a[data-stt-changelang] {
+  margin:0 7px;
+}
+
+//アクティブなテキストのスタイル
+a[data-stt-active] {
+  text-decoration:none;
+  font-weight:bold;
+}
+<style>
