@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>中間ページ</title>
+	<script>
+		function pageBack() {
+		location.href = location.search.match(/(?<=\?from\=)(.*)/)[0];
+		}
+	</script>
+</head>
+<body>
+  TRANSLATION
+  <br><br>
+	This website will be translated in English using a automatic translation service.
+	Please note that as it is a machine translation from an automatic translation system, the translation may not always be accurate.
+	Also note that after the translation, the content may not be same as in the original japanese page.
+	<br><br>
+	<a href="#" onclick="pageBack()">前のページへ戻る</a>
+</body>
+</html>
