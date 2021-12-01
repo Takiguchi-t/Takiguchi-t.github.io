@@ -5,7 +5,7 @@
   <title>中間ページ</title>
 	<script>
 		function pageBack() {
-		location.href = location.search.match(/(?<=\?from\=)(.*)/)[0];
+		location.href = location.search.match(/\?from\=(.*)/)[1];
 		}
 	</script>
 </head>
