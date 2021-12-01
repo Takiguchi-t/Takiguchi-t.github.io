@@ -5,6 +5,13 @@
   <title>テストページ</title>
   <script src="https://shutto-translation-development-takiguchi.s3.amazonaws.com/trans.js?id=30"></script>
   <link rel="stylesheet" href="style.css">
+  <script>
+    __stt.on('selectLang', function(event) {
+      if (event.lang !== 'ja') {
+      location.href = '/chukan.html' + '?from=' + location.href;
+      }
+    });
+  </script>
 </head>
 <body>
   テスト用サンプルページ
