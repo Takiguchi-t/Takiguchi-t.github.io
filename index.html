@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>テストページ</title>
   <script src="https://sandbox-d.ea-shutto-translation.net/trans.js?id=1901"></script>
-  <link rel="stylesheet" href="style.css">
+<!--   <link rel="stylesheet" href="style.css"> -->
   <script>
     __stt.on('selectLang', function(event) {
          var css=document.createElement("link");
@@ -15,7 +15,7 @@
 //          } else if (event.lang == 'ko') {
 //            css.setAttribute("href","css2.css");
 //          }
-         document.getElementsByTagName("body")[0].appendChild(css);
+         document.getElementsByTagName("head")[0].appendChild(css);
 //       if (event.lang !== 'ja') {
 //       location.href = '/chukan.html' + '?from=' + location.href;
 //       }
