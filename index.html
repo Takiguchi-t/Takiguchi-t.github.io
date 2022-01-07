@@ -4,18 +4,17 @@
   <meta charset="UTF-8">
   <title>テストページ</title>
   <script src="https://sandbox-d.ea-shutto-translation.net/trans.js?id=1901"></script>
-<!--   <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="style.css">
   <script>
     __stt.on('selectLang', function(event) {
-         var css=document.createElement("link");
-         css.setAttribute("rel","stylesheet");
-         css.setAttribute("type”,”text/css");
-//          if (event.lang == 'en') {
-           css.setAttribute("href","css1.css");
-//          } else if (event.lang == 'ko') {
-//            css.setAttribute("href","css2.css");
-//          }
-         document.getElementsByTagName("head")[0].appendChild(css);
+      if (event.lang == 'ja') {
+        document.getElementById('body_main').setAttribute('class', 'font_ja');
+      } else if (event.lang == 'en') {
+        document.getElementById('body_main').setAttribute('class', 'font_en');
+      } else if (event.lang == 'ko') {
+        document.getElementById('body_main').setAttribute('class', 'font_ko');
+      }
+
 //       if (event.lang !== 'ja') {
 //       location.href = '/chukan.html' + '?from=' + location.href;
 //       }
@@ -23,6 +22,7 @@
   </script>
 </head>
 <body>
+  <div id="body_main" class="font_ja">
   テスト用サンプルページ
   <br><br>
   <!--
@@ -124,6 +124,7 @@
     <p>あいうえお</p>
     <p>かきくけこ</p>
     <p>さしすせそ</p>
+  </div>
   </div>
 </body>
 </html>
