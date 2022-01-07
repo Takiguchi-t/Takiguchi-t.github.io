@@ -10,4 +10,13 @@ a[data-stt-active] {
   text-decoration:none;
   font-weight:bold;
 }
+
+.font_en {
+  font-family: fantasy;
+}
+
+.font_ko {
+  font-family: fantasy;
+}
+
 <style>
