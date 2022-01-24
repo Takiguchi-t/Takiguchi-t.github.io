@@ -121,12 +121,36 @@
   </table>
   
   <section>
-    <h1>sectionタグの中</h1>
-    <p>
-      "東京"
-    </p>
-    <p>千葉</p>
-    <p>埼玉</p>
+    <h1 class="pageTitle">お問い合わせ</h1>
+
+        
+            <p>よくあるご質問ページのご案内（解決方法）を先にご参照及びお試しください。<br />
+以下のフォームの項目を入力し、よろしければ「この内容で問い合わせる」ボタンをクリックしてください。</p>
+
+            
+            <table class="formTable">
+            <tr>
+                <th>お名前<span class="required">必須</span></th>
+                <td>
+                    <p id="name_error" class="errorMesseage"></p>
+                    <input type="text" name="name" maxlength="20" size="25" value="">
+                </td>
+            </tr>
+            <tr>
+                <th>メールアドレス<span class="required">必須</span></th>
+                <td>
+                <p id="email_error" class="errorMesseage"></p>
+                <input type="text" name="email" maxlength="50" size="50" value=""></td>
+            </tr>
+            <tr>
+                <th>お問い合わせ内容<span class="required">必須</span></th>
+                <td>
+                    <p id="content_error" class="errorMesseage"></p>
+                    <textarea wrap="off" rows="15" cols="60" maxlength="2000" name="content"></textarea>
+                    <span class="notes">※全角2000文字まで</span>
+                </td>
+            </tr>
+            </table>
   </section>
   
   <div id="test" data-stt-ignore>
