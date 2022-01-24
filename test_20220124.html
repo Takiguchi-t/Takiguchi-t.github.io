@@ -1,0 +1,208 @@
+
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="euc-jp">
+<title>お問い合わせ</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href="css/contact.css">
+<link rel="stylesheet" type="text/css" href="css/smp.css">
+<script type="text/javascript" src="https://www.makeshop.jp/ssl/asset/jquery/1.8.3/jquery.min.js"></script>
+<!-- Please don't delete it. -->
+<script>
+  var MEMBER_ID = '';
+</script>
+<script src="https://gigaplus.makeshop.jp/mikasashop/app/ms.js" charset="UTF-8" defer></script>
+<!-- /Please don't delete it. -->
+<script src="https://d.shutto-translation.com/trans.js?id=1916"></script>
+</head>
+<body>
+
+
+<form name="contact" method="post" action="index.html">
+    <input type="hidden" name="contact" value="">
+    <input type="hidden" name="admin_id" value="mikasashop">
+    <input type="hidden" name="brandcode" value="">
+    <input type="hidden" name="contact_post_token" value="224e83d4f718bbd4516b22fbc9175c9d4cb2739e">
+    <input type="hidden" name="is_smartphone" value="N">
+<div class="wrap" id="contact">
+
+    <section class="main">
+
+        <div class="section">
+
+            <h1 class="pageTitle">お問い合わせ</h1>
+
+        
+            <p>よくあるご質問ページのご案内（解決方法）を先にご参照及びお試しください。<br />
+以下のフォームの項目を入力し、よろしければ「この内容で問い合わせる」ボタンをクリックしてください。</p>
+
+            
+            <table class="formTable">
+            <tr>
+                <th>お名前<span class="required">必須</span></th>
+                <td>
+                    <p id="name_error" class="errorMesseage"></p>
+                    <input type="text" name="name" maxlength="20" size="25" value="">
+                </td>
+            </tr>
+            <tr>
+                <th>メールアドレス<span class="required">必須</span></th>
+                <td>
+                <p id="email_error" class="errorMesseage"></p>
+                <input type="text" name="email" maxlength="50" size="50" value=""></td>
+            </tr>
+            <tr>
+                <th>お問い合わせ内容<span class="required">必須</span></th>
+                <td>
+                    <p id="content_error" class="errorMesseage"></p>
+                    <textarea wrap="off" rows="15" cols="60" maxlength="2000" name="content"></textarea>
+                    <span class="notes">※全角2000文字まで</span>
+                </td>
+            </tr>
+            </table>
+
+            <div class="policyWrap">
+                <h2 class="policyTitle">個人情報保護ポリシー</h2>
+
+                <div class="privacyPolicyWrap">
+                    <iframe src="../agreement.html?type=pc&db=mikasashop" class="privacyPolicy"></iframe>
+                </div>
+
+                <p id="agree_error" class="errorMesseage"></p>
+                <div class="agreeBox">
+                    <input type="checkbox" name="agree" id="agree" class="agreeCheck"><label for="agree">個人情報保護ポリシーに同意する</label>
+                </div>
+            </div>
+
+            <div class="btnWrap">
+                <a class="btn" id="send_btn" href="JavaScript:send_contact()">この内容で問い合わせる</a>
+            </div>
+                </div>
+    </section>
+
+    <footer class="footer">
+        <p class="copyright"><small>&copy;2022 EC Door All Rights Reserved.</small></p>
+    </footer>
+
+</div>
+
+</form>
+<div class="smartphoneHide"></div>
+<script>
+$(function() {
+    $("#agree").attr("checked", false);
+    $("#send_btn").addClass("disabled");
+    $("#agree").click(function() {
+        $("#send_btn").toggleClass("disabled");
+    });
+
+    $('input[name=is_smartphone]').val($('.smartphoneHide').css('display') == 'none' ? 'Y' : 'N');
+
+    if ('' == '../images/smartphone/noImg_100.png') {
+        render_noimage($('.itemImg'));
+    }
+
+    if ($('input[name=is_smartphone]').val() == 'Y') {
+        $('iframe.privacyPolicy').attr('src', '../agreement.html?type=smartphone&db=' + $('input[name=admin_id]').val());
+    }
+});
+
+function render_noimage(img) {
+    var path = $('input[name=is_smartphone]').val() == 'Y' ? '../images/smartphone/noImg_100.png' : '../images/responsive_design/noImg_200.png';
+    img.attr('src', path);
+}
+
+function charcount(str) {
+    var len = 0;
+    var str = escape(str);
+    for (i=0;i<str.length;i++,len++) {
+        if (str.charAt(i) == "%") {
+            if (str.charAt(++i) == "u") {
+                i += 3;
+                len++;
+            }
+            i++;
+        }
+    }
+    return len;
+}
+
+function check_email_format(form_name) {
+    var str_val = document.contact[form_name].value;
+
+    if (!str_val.match(/@([A-Za-z0-9-]+\.)+[A-Za-z0-9]{2,}$/)) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+function send_contact() {
+
+    $(".errorMesseage").html("");
+
+    var is_error = false;
+
+    if (document.contact.name.value.length==0) {
+        $("#name_error").html('名前を入力して下さい。');
+        if (is_error == false) {
+            document.contact.name.focus();
+        }
+        is_error = true;
+    } else if (charcount(document.contact.name.value) > 40) {
+        $("#name_error").html('名前は全角20字以内でご入力ください');
+        if (is_error == false) {
+            document.contact.name.focus();
+        }
+        is_error = true;
+    }
+
+    if (document.contact.email.value.length==0) {
+        $("#email_error").html('メールアドレスを入力して下さい。');
+        if (is_error == false) {
+            document.contact.email.focus();
+        }
+        is_error = true;
+    } else if (!check_email_format("email")) {
+        $("#email_error").html('メールアドレス形式でご入力ください。');
+        if (is_error == false) {
+            document.contact.email.focus();
+        }
+        is_error = true;
+    }
+
+    if (document.contact.content.value.length==0) {
+        $("#content_error").html('お問い合わせ内容を入力して下さい。');
+        if (is_error == false) {
+            document.contact.content.focus();
+        }
+        is_error = true;
+    } else if (charcount(document.contact.content.value) > 4000) {
+        $("#content_error").html('お問い合わせ内容は全角2000字以内でご入力ください');
+        if (is_error == false) {
+            document.contact.content.focus();
+        }
+        is_error = true;
+    }
+
+    if (document.contact.agree.checked == false) {
+        $("#agree_error").html('同意するにチェックしてください');
+        if (is_error == false) {
+            document.contact.agree.focus();
+        }
+        is_error = true;
+    }
+
+    if (is_error == false) {
+        if (confirm('お問い合わせを送信します。よろしいですか？')) {
+            document.contact.submit();
+        }
+    }
+
+}
+
+</script>
+</body>
+</html>
