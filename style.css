@@ -24,7 +24,7 @@ a[data-stt-active] {
 }
 
 .inline-block-test > span {
-  display: inline-block;
+  display: inline;
 }
 
 <style>
