@@ -23,4 +23,8 @@ a[data-stt-active] {
   font-family: serif;
 }
 
+.inline-block-test {
+  display: inline-block;
+}
+
 <style>
