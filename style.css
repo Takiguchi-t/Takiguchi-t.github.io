@@ -23,7 +23,7 @@ a[data-stt-active] {
   font-family: serif;
 }
 
-.inline-block-test {
+.inline-block-test > span {
   display: inline-block;
 }
 
