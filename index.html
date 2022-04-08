@@ -25,11 +25,11 @@
   <script>
     __stt.on('selectLang', function(event) {
       if (event.lang == 'ja') {
-        document.getElementsByClassName('_fs_op_chat_exp').style.display = "block";
+        document.getElementById('button_test').style.display = "block";
       } else if (event.lang == 'en') {
-        document.getElementsByClassName('_fs_op_chat_exp').style.display = "none";
+        document.getElementById('button_test').style.display = "none";
       } else if (event.lang == 'ko') {
-        document.getElementsByClassName('_fs_op_chat_exp').style.display = "none";
+        document.getElementById('button_test').style.display = "none";
       }
   </script>
 </head>
@@ -187,7 +187,7 @@
      
   </div>
 	
-  <div class="_fs_op_chat_exp _fs_pc_no_comment  _fs_sp_no_comment " style="display: block;">
+  <div id="button_test" class="_fs_op_chat_exp _fs_pc_no_comment  _fs_sp_no_comment " style="display: block;">
     <div class="_fs_title_area">
       <div class="_fs_title_center _fs_close_right">
         <div class="_fs_title_main">
