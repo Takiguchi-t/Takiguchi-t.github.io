@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Test Page (English)</title>
+  <script src="https://shutto-translation-development-takiguchi.s3.amazonaws.com/trans.js?id=122"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="canonical" href="https://takiguchi-t.github.io/">
+  <script>
+    __stt.on('selectLang', function(event) {
+      if (event.lang == 'ja') {
+        document.getElementById('body_main').setAttribute('class', 'font_ja');
+	document.getElementById('button_test').style.display = "block";
+      } else if (event.lang == 'en') {
+        document.getElementById('body_main').setAttribute('class', 'font_en');
+	document.getElementById('button_test').style.display = "none";
+      } else if (event.lang == 'ko') {
+        document.getElementById('body_main').setAttribute('class', 'font_ko');
+	document.getElementById('button_test').style.display = "none";
+      }
+
+//       if (event.lang !== 'ja') {
+//       location.href = '/chukan.html' + '?from=' + location.href;
+//       }
+    });
+  </script>
+    
+  <script>
+    __stt.on('selectLang', function(event) {
+      if (event.lang == 'ja') {
+        document.getElementById('button_test').style.display = "block";
+      } else if (event.lang == 'en') {
+        document.getElementById('button_test').style.display = "none";
+      } else if (event.lang == 'ko') {
+        document.getElementById('button_test').style.display = "none";
+      }
+  </script>
+</head>
+	
+<body>
+  <div id="body_main" class="font_ja">
+  Sample Page
+  <br><br>
+  <!--
+  <a href="#" data-stt-changelang="ja" data-stt-ignore>日本語</a> 
+  <a href="#" data-stt-changelang="en" data-stt-ignore>English</a>
+  -->
+  <table border="2" bgcolor="#e6e6fa">
+  <tr>
+    <th width="50">No.</th>
+    <th width="200">Name</th>
+    <th width="300">Image</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Book</td>
+    <td align="center"><img src="img/book.png" width="100" height="100" alt="Book"></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Cart</td>
+    <td align="center"><img src="img/cart.png" width="100" height="100"></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Earth</td>
+    <td align="center"><img src="img/earth.png" width="100" height="100"></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>PC</td>
+    <td align="center"><img src="img/pc.png" width="100" height="100"></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Telephone</td>
+    <td align="center"><img src="img/tel.png" width="100" height="100"></td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Telephone2</td>
+    <td align="center"><img src="img/tel.png" width="100" height="100"></td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Telephone3</td>
+    <td align="center"><img src="img/tel.png" width="100" height="100"></td>
+  </tr>
+  </table>
+  
+  <br><br>
+  
+  <table>
+    <tr>
+      <td width="100" align="center"><a href="">Home</a></td>
+      <td>|</td>
+      <td width="100" align="center"><a href="">Mail</a></td>
+      <td>|</td>
+      <td width="100" align="center"><a href="">Telephone</a></td>
+      <td>|</td>
+      <td width="100" align="center"><a href="">Help</a></td>
+      <td>|</td>
+      <td width="100" align="center"><a href="table1.html">Sample1</a></td>
+      <td>|</td>
+      <td width="100" align="center"><a href="table2.html">Tanaka Yukimichi</a></td>
+      <td>|</td>
+      <td width="100" align="center"><a href="en.html">English Page</a></td>
+      <td>|</td>
+      <td width="100" align="center"><a href="table2.html">Space Test A</a></td>
+      <td>|</td>
+      <td width="100" align="center"><a href="table2.html">Half-Width space 1112</a></td>
+      <td>|</td>
+      <td width="100" align="center"><a href="table2.html">Full-Width Space　1112</a></td>
+    </tr>
+	
+</body>
+</html>
