@@ -35,4 +35,13 @@ a[data-stt-active] {
   height: 100%;
 }
 
+.tag[data-v-de901a6a] {
+    padding: 0 0.2rem;
+    color: #fff;
+    font-size: 11px;
+    margin-right: 0.3rem;
+    display: inline-block;
+    border-radius: 3px;
+}
+
 <style>
