@@ -70,7 +70,7 @@ a[data-stt-active] {
 }
 
 /* ホバー時にツールチップの非表示を解除 */
-.data-stt-changelang-disabled .tooltip:hover .tooltip-text {
+.data-stt-changelang-disabled:hover .tooltip-text {
   opacity: 1;
   visibility: visible;
 }
