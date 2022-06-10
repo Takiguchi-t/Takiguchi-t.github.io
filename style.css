@@ -45,13 +45,13 @@ a[data-stt-active] {
 }
 
 /* カーソルを重ねる要素 */
-.data-stt-changelang-disabled .tooltip {
+.tooltip {
   position: relative; /* ツールチップの位置の基準に */
   cursor: pointer; /* カーソルを当てたときにポインターに */
 }
 
 /* ツールチップのテキスト */
-.data-stt-changelang-disabled .tooltip-text {
+.tooltip-text {
   opacity: 0; /* はじめは隠しておく */
   visibility: hidden; /* はじめは隠しておく */
   position: absolute; /* 絶対配置 */
