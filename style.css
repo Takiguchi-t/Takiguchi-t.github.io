@@ -45,13 +45,13 @@ a[data-stt-active] {
 }
 
 /* カーソルを重ねる要素 */
-.tooltip {
+.data-stt-changelang-disabled .tooltip {
   position: relative; /* ツールチップの位置の基準に */
   cursor: pointer; /* カーソルを当てたときにポインターに */
 }
 
 /* ツールチップのテキスト */
-.tooltip-text {
+.data-stt-changelang-disabled .tooltip-text {
   opacity: 0; /* はじめは隠しておく */
   visibility: hidden; /* はじめは隠しておく */
   position: absolute; /* 絶対配置 */
@@ -70,7 +70,7 @@ a[data-stt-active] {
 }
 
 /* ホバー時にツールチップの非表示を解除 */
-.tooltip:hover .tooltip-text {
+.data-stt-changelang-disabled .tooltip:hover .tooltip-text {
   opacity: 1;
   visibility: visible;
 }
