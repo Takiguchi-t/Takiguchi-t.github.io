@@ -44,22 +44,4 @@ a[data-stt-active] {
     border-radius: 3px;
 }
 
-.stt-changelang-disabled:hover + .alert-text {
-  text-decoration: line-through;
-  display: block
-}
-
-.alert-text {
-  display: none;
-  width: 200px;
-  position: absolute;
-  top: 0;
-  left: 250px;
-  padding: 16px;
-  border-radius: 5px;
-  background: #33cc99;
-  color: #fff;
-  font-weight: bold;
-}
-
 <style>
