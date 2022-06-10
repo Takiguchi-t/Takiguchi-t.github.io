@@ -44,30 +44,35 @@ a[data-stt-active] {
     border-radius: 3px;
 }
 
-.description1 {
-    display: none;
-    position: absolute;
-    padding: 10px;
-    font-size: 12px;
-    line-height: 1.6em;
-    color: #fff;
-    border-radius: 5px;
-    background: #000;
-    width: 100px;
+/* カーソルを重ねる要素 */
+.tooltip {
+  position: relative; /* ツールチップの位置の基準に */
+  cursor: pointer; /* カーソルを当てたときにポインターに */
 }
-.description1:before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    border: 15px solid transparent;
-    border-top: 15px solid #000;
-    margin-left: -15px;
+
+/* ツールチップのテキスト */
+.tooltip-text {
+  opacity: 0; /* はじめは隠しておく */
+  visibility: hidden; /* はじめは隠しておく */
+  position: absolute; /* 絶対配置 */
+  left: 50%; /* 親に対して中央配置 */
+  transform: translateX(-50%); /* 親に対して中央配置 */
+  bottom: -30px; /* 親要素下からの位置 */
+  display: inline-block;
+  padding: 5px; /* 余白 */
+  white-space: nowrap; /* テキストを折り返さない */
+  font-size: 0.8rem; /* フォントサイズ */
+  line-height: 1.3; /* 行間 */
+  background: #333; /* 背景色 */
+  color: #fff; /* 文字色 */
+  border-radius: 3px; /* 角丸 */
+  transition: 0.3s ease-in; /* アニメーション */
 }
-.tooltip1:hover .description1{
-    display: inline-block;
-    top: -70px;
-    left: -30px;
+
+/* ホバー時にツールチップの非表示を解除 */
+.tooltip:hover .tooltip-text {
+  opacity: 1;
+  visibility: visible;
 }
 
 <style>
