@@ -75,4 +75,9 @@ a[data-stt-active] {
   visibility: visible;
 }
 
+a[data-stt-disabled] * {
+  color: #999;
+  pointer-events: none
+}
+
 <style>
