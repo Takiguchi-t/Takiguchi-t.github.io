@@ -330,25 +330,27 @@
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
   $(function () {
-    $('#openModal').click(function(){
-      $('#modalArea').fadeIn();
+    const idPrefix = "#nursery" + 0;
+    const $nursery = $(idPrefix);
+	  
+    $nursery.on("change", function () {
+      viewNurseryModal($nursery, index);
     });
-  $('#closeModal , #modalBg').click(function(){
-    $('#modalArea').fadeOut();
-  });
 	  
-  function viewNurseryModal(nursery, index) {
-    const value = nursery.val();
-    if (value != "") {
-      const selectedNurseryName = nursery.children('option:selected').text();
-      $("#js-confirmation-nursery" + index).html("<p class='mB20'>ご利用の保育園は以下でお間違いないでしょうか？</p><p data-stt-ignore class='emphasis'>「" + selectedNurseryName + "」</p>");
-      $('#js-modal-nursery' + index).show();
+    function viewNurseryModal(nursery, index) {
+      const value = nursery.val();
+      if (value != "") {
+        const selectedNurseryName = nursery.children('option:selected').text();
+        $("#js-confirmation-nursery" + index).html("<p class='mB20'>ご利用の保育園は以下でお間違いないでしょうか？</p><p data-stt-ignore class='emphasis'>「" + selectedNurseryName + "」</p>");
+        $('#js-modal-nursery' + index).show();
+      }
     }
-  }
 	  
-  $nursery.on("change", function () {
-    viewNurseryModal($nursery, index);
   });
+	  
+  
+	  
+  
   
 </script>
 	
