@@ -50,7 +50,7 @@
     });
   </script>
   -->
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 </head>
 	
 <body>
@@ -320,6 +320,13 @@
   </section>
   <!-- モーダルエリアここまで -->
 
+  <select data-stt-ignore id="nursery0" name="children[0].nurseryId">
+    <option value>−選択してください−</option>
+    <option value="1394">保育園1394</option>
+    <option value="1395">保育園1395</option>
+    <option value="1449">保育園1449</option>
+  </select>
+
 <!-- ↓body閉じタグ直前でjQueryを読み込む -->
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
@@ -330,7 +337,20 @@
   $('#closeModal , #modalBg').click(function(){
     $('#modalArea').fadeOut();
   });
-});
+	  
+  function viewNurseryModal(nursery, index) {
+    const value = nursery.val();
+    if (value != "") {
+      const selectedNurseryName = nursery.children('option:selected').text();
+      $("#js-confirmation-nursery" + index).html("<p class='mB20'>ご利用の保育園は以下でお間違いないでしょうか？</p><p data-stt-ignore class='emphasis'>「" + selectedNurseryName + "」</p>");
+      $('#js-modal-nursery' + index).show();
+    }
+  }
+	  
+  $nursery.on("change", function () {
+    viewNurseryModal($nursery, index);
+  });
+  
 </script>
 	
 </body>
