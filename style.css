@@ -132,4 +132,59 @@ button {
   transform:translate(-50%,-50%);
 }
 
+.confirmation_modal {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.confirmation_modal_bg {
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100vh;
+  /*
+  position: absolute;
+  */
+}
+.confirmation_modal_content {
+  width: calc( 60% - 80px ); /* box-sizingの設定がないとpaddingとwidthが別で計算されるためpaddingを足して幅60%になるようにしてます */
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  background: #fff;
+  font-size: 18px;
+}
+button.modalButton {
+  width: 140px;
+  height: 45px;
+  margin: 15px;
+  color: #777;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  background: #fff;
+  border: 2px solid #ccc;
+  display: block;
+  transition: 0.5s;
+  float: inherit;
+}
+button.modalButton:hover {
+  color: #777;
+  background: #eee;
+  border: 2px solid #eee;
+  transition: 0.5s;
+}
+.emphasis {
+  font-size: 22px;
+  font-weight: bold;
+  color: #dc232c;
+  text-align: center;
+}
+
 <style>
