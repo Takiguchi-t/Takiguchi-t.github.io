@@ -345,7 +345,6 @@
     const $nursery = $(idPrefix);
 	  
     $nursery.on("change", function () {
-      alert('on change')
       viewNurseryModal($nursery, 0);
     });
 	  
@@ -354,6 +353,7 @@
       alert(value)
       if (value != "") {
         const selectedNurseryName = nursery.children('option:selected').text();
+	alert(selectedNurseryName)
         $("#js-confirmation-nursery" + index).html("<p class='mB20'>ご利用の保育園は以下でお間違いないでしょうか？</p><p data-stt-ignore class='emphasis'>「" + selectedNurseryName + "」</p>");
         $('#js-modal-nursery' + index).show();
       }
