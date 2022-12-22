@@ -186,5 +186,11 @@ button.modalButton:hover {
   color: #dc232c;
   text-align: center;
 }
+.txtC {
+  text-align: center;
+}
+.mB20 {
+  margin-bottom: 20px;
+}
 
 <style>
