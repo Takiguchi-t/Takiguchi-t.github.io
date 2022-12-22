@@ -348,6 +348,13 @@
       viewNurseryModal($nursery, 0);
     });
 	  
+    $("#js-modal-close-yes-nursery" + index).on('click', function () {
+      $("#js-modal-nursery" + index).hide();
+    });
+    $("#js-modal-close-no-nursery" + index).on('click', function () {
+      $("#js-modal-nursery" + index).hide();
+    });
+	  
     function viewNurseryModal(nursery, index) {
       const value = nursery.val();
       alert(value)
