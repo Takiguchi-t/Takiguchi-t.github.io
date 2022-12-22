@@ -192,5 +192,13 @@ button.modalButton:hover {
 .mB20 {
   margin-bottom: 20px;
 }
+.wrap_modalButton{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+ }
 
 <style>
