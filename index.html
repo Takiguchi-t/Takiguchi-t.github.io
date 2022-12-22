@@ -348,19 +348,17 @@
       viewNurseryModal($nursery, 0);
     });
 	  
-    $("#js-modal-close-yes-nursery" + index).on('click', function () {
-      $("#js-modal-nursery" + index).hide();
+    $("#js-modal-close-yes-nursery" + 0).on('click', function () {
+      $("#js-modal-nursery" + 0).hide();
     });
-    $("#js-modal-close-no-nursery" + index).on('click', function () {
-      $("#js-modal-nursery" + index).hide();
+    $("#js-modal-close-no-nursery" + 0).on('click', function () {
+      $("#js-modal-nursery" + 0).hide();
     });
 	  
     function viewNurseryModal(nursery, index) {
       const value = nursery.val();
-      alert(value)
       if (value != "") {
         const selectedNurseryName = nursery.children('option:selected').text();
-	alert(selectedNurseryName)
         $("#js-confirmation-nursery" + index).html("<p class='mB20'>ご利用の保育園は以下でお間違いないでしょうか？</p><p data-stt-ignore class='emphasis'>「" + selectedNurseryName + "」</p>");
         $('#js-modal-nursery' + index).show();
       }
