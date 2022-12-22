@@ -288,29 +288,24 @@
     <a href="table1.html">リンクテスト3</a></td>
   </div>
 
-  <button data-stt-ignore id="openModal">Open modal</button>
-  <!-- モーダルエリアここから -->
-  <section id="modalArea" class="modalArea">
-    <div id="modalBg" class="modalBg"></div>
-    <div class="modalWrapper">
-      <div class="modalContents">
-        <h1>モーダルテスト</h1>
-	<p>ご利用の保育園は以下でお間違いないでしょうか？</p>
-        <p data-stt-ignore>「保育園テスト1」</p>
-      </div>
-      <div id="closeModal" class="closeModal">
-        ×
-      </div>
-    </div>
-  </section>
-  <!-- モーダルエリアここまで -->
+  <br><br>
 
-  <select data-stt-ignore id="nursery0" name="children[0].nurseryId">
-    <option value>−選択してください−</option>
-    <option value="1394">保育園1394</option>
-    <option value="1395">保育園1395</option>
-    <option value="1449">保育園1449</option>
-  </select>
+  <tr class="request step">
+    <th lowspan="2">
+      <span class="ico_step">保育園名</span>
+    </th>
+    <td>
+      <span class="select add02">
+        <select data-stt-ignore id="nursery0" name="children[0].nurseryId">
+          <option value>−選択してください−</option>
+          <option value="1394">保育園1394</option>
+          <option value="1395">保育園1395</option>
+          <option value="1449">保育園1449</option>
+        </select>
+      </span>
+    </td>
+  </tr>
+
 
   <div id="js-modal-nursery0" class="confirmation_modal" style="display: none;">
     <div id="js-modal-close-nursery0" class="confirmation_modal_bg"></div>
