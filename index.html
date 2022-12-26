@@ -341,9 +341,9 @@
       if (value != "") {
         const selectedNurseryName = nursery.children('option:selected').text();
 //         $("#js-confirmation-nursery" + index).html("<p class='mB20'>ご利用の保育園は以下でお間違いないでしょうか？</p><p data-stt-ignore class='emphasis'>「" + selectedNurseryName + "」</p>");
-        $("#js-confirmation-nursery" + index).html("<p class='mB20'>ご利用の保育園は以下でお間違いないでしょうか？</p><p class='emphasis'>「" + selectedNurseryName + "」</p>");
-//         $("#js-confirmation-nursery" + index).append("<p class='mB20'>ご利用の保育園は以下でお間違いないでしょうか？</p>");
-//         $("#js-confirmation-nursery" + index).append("<p data-stt-ignore class='emphasis'>「" + selectedNurseryName + "」</p>");
+//         $("#js-confirmation-nursery" + index).html("<p class='mB20'>ご利用の保育園は以下でお間違いないでしょうか？</p><p class='emphasis'>「" + selectedNurseryName + "」</p>");
+        $("#js-confirmation-nursery" + index).append("<p class='mB20'>ご利用の保育園は以下でお間違いないでしょうか？</p>");
+        $("#js-confirmation-nursery" + index).append("<p data-stt-ignore class='emphasis'>「" + selectedNurseryName + "」</p>");
         $('#js-modal-nursery' + index).show();
       }
     }
