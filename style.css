@@ -201,4 +201,24 @@ button.modalButton:hover {
   justify-content: center;
  }
 
+.grid-item-text {
+  font-size: 18px;
+  font-weight: 100;
+  color: #333;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+
+
 <style>
