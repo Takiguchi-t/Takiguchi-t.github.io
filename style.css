@@ -220,5 +220,8 @@ sub {
     font-size: smaller;
 }
 
+body {
+    font-family: "DIN Next LT W01", Arial, Helvetica, sans-serif;
+}
 
 <style>
