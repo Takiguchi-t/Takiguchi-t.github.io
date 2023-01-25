@@ -225,7 +225,7 @@ body {
 }
 
 .test1 {
-  width: 1000px;
+  max-width: 1000px;
 }
 
 .test_trunk8 {
