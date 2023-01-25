@@ -229,6 +229,8 @@ body {
   margin-bottom: 1px;
   background: #ccc;
   padding:5px;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 .test_trunk8 span{
   display:block;
