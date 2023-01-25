@@ -224,6 +224,10 @@ body {
     font-family: "DIN Next LT W01", Arial, Helvetica, sans-serif;
 }
 
+.test1 {
+  width: 200px;
+}
+
 .test_trunk8 {
   width: 100%;
   margin-bottom: 1px;
