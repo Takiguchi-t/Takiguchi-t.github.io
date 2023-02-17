@@ -328,6 +328,7 @@
 
   <div class="lang_get_api_test">
     <p>言語取得APIテスト</p>
+    <p>※言語取得APIが正常に動作している場合、文字色が赤になる</p>
   </div>
 
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -380,7 +381,7 @@
 <script>
   __stt.get('lang', function(lang) {
     console.log(`lang: ${lang}`)
-    
+    $(".lang_get_api_test").css('color', '#f00');
   });
 </script>
 	
