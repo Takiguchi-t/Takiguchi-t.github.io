@@ -360,7 +360,6 @@
 
 <script>
   __stt.on('selectLang', function(event) {
-    console.log(`__stt.on eventName: 'selectLang'`)
 //       if (event.lang == 'ja') {
 //         document.getElementById('body_main').setAttribute('class', 'font_ja');
 // 	document.getElementById('button_test').style.display = "block";
@@ -380,14 +379,12 @@
 
 <script>
   __stt.get('lang', function(lang) {
-    console.log(`__stt.get lang: ${lang}`)
     $(".lang_get_api_test").css('color', '#f00');
   });
 </script>
 
 <script>
   __stt.set('lang', 'en');
-  console.log(`__stt.set lang: 'en'`)
 </script>
 	
 </body>
