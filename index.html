@@ -380,9 +380,14 @@
 
 <script>
   __stt.get('lang', function(lang) {
-    console.log(`lang: ${lang}`)
+    console.log(`__stt.get lang: ${lang}`)
     $(".lang_get_api_test").css('color', '#f00');
   });
+</script>
+
+<script>
+  __stt.set('lang', 'en');
+  console.log(`__stt.set lang: ${lang}`)
 </script>
 	
 </body>
