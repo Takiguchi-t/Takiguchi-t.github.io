@@ -361,6 +361,7 @@
 <script>
   __stt.on('selectLang', function(event) {
     console.log(`__stt.on called.`)
+    console.log(`event.lang: ${event.lang}`)
 //       if (event.lang == 'ja') {
 //         document.getElementById('body_main').setAttribute('class', 'font_ja');
 // 	document.getElementById('button_test').style.display = "block";
@@ -372,9 +373,9 @@
 // 	document.getElementById('button_test').style.display = "none";
 //       }
 
-    if (event.lang !== 'ja') {
-      location.href = '/chukan.html' + '?from=' + location.href;
-    }
+//     if (event.lang !== 'ja') {
+//       location.href = '/chukan.html' + '?from=' + location.href;
+//     }
   });
 </script>
 
