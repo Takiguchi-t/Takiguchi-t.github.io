@@ -401,6 +401,7 @@
   __stt.on('selectLang', function(event) {
     console.log(`【__stt.on】event.lang: ${event.lang}`)
     if (event.lang !== 'ja') {
+      console.log(`中間ページに遷移する`)
       location.href = '/chukan.html' + '?from=' + location.href;
     }
   });
