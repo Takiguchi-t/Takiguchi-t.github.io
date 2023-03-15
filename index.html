@@ -400,9 +400,9 @@
 <script>
   __stt.on('selectLang', function(event) {
     console.log(`【__stt.on】event.lang: ${event.lang}`)
-//     if (event.lang !== 'ja') {
-//       location.href = '/chukan.html' + '?from=' + location.href;
-//     }
+    if (event.lang !== 'ja') {
+      location.href = '/chukan.html' + '?from=' + location.href;
+    }
   });
 </script>
 
