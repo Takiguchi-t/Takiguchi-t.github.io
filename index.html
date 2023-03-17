@@ -402,7 +402,9 @@
     console.log(`【__stt.on】event.lang: ${event.lang}`)
     if (event.lang !== 'ja') {
       console.log(`中間ページに遷移する`)
-      location.href = '/chukan.html' + '?from=' + location.href;
+      console.log(`遷移先：${document.querySelector(`link[rel="alternate"][hreflang="${event.lang}"]`).href}`)
+      location.href = '/chukan.html' + '?from=' + document.querySelector(`link[rel="alternate"][hreflang="${event.lang}"]`).href;
+//       location.href = '/chukan.html' + '?from=' + location.href;
     }
   });
 </script>
