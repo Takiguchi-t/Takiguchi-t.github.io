@@ -360,7 +360,6 @@
 
   <div class="lang_get_api_test">
     <p>言語取得APIテスト</p>
-    <input type="button" value="言語取得API呼び出し" onclick="OnButtonClick()"/>
     <p>※言語取得APIが正常に動作している場合、文字色が赤になる</p>
   </div>
 
@@ -429,14 +428,6 @@
   
 </script>
 
-<script>
-  function OnButtonClick() {
-    __stt.on('selectLang', function(event) {
-      console.log(`【__stt.on】event.lang: ${event.lang}`)
-    }
-  }
-</script>
-
 <!-- <script>
   __stt.on('selectLang', function(event) {
     console.log(`【__stt.on】event.lang: ${event.lang}`)
@@ -446,12 +437,12 @@
   });
 </script> -->
 
-<!-- <script>
+<script>
   __stt.get('lang', function(lang) {
     console.log(`【__stt.get】lang: ${lang}`)
     $(".lang_get_api_test").css('color', '#f00');
   });
-</script> -->
+</script>
 
 <!-- <script>
   window.addEventListener('load', (event) => {
