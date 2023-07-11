@@ -431,7 +431,9 @@
 
 <script>
   function OnButtonClick() {
-    alert("ボタンが押されました")
+    __stt.on('selectLang', function(event) {
+      console.log(`【__stt.on】event.lang: ${event.lang}`)
+    }
   }
 </script>
 
