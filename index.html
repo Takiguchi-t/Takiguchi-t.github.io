@@ -29,6 +29,14 @@
   });
   </script>
   -->
+  <script>
+    function OnButtonClick() {
+      __stt.get('lang', function(lang) {
+        console.log(`【__stt.get】lang: ${lang}`)
+        $(".lang_get_api_test").css('color', '#f00');
+      }
+    }
+  </script>
   <link rel="stylesheet" href="style.css">
 </head>
 	
@@ -444,15 +452,6 @@
     $(".lang_get_api_test").css('color', '#f00');
   });
 </script> -->
-
-<script>
-  function OnButtonClick() {
-    __stt.get('lang', function(lang) {
-      console.log(`【__stt.get】lang: ${lang}`)
-      $(".lang_get_api_test").css('color', '#f00');
-    }
-  }
-</script>
 
 <!-- <script>
   window.addEventListener('load', (event) => {
