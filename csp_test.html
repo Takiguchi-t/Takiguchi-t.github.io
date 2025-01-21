@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html data-test="test1">
+<head>
+  <!-- Google Tag Manager -->
+<!--   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-53TPJVVF');
+  </script> -->
+<!-- End Google Tag Manager -->
+  <!-- Global site tag (gtag.js) - Google Analytics --> 
+  <!-- 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-228774937-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-228774937-1');
+  </script>
+  -->
+  <meta charset="UTF-8">
+  <title>CSPテスト</title> 
+<!--   <link rel="canonical" href="https://takiguchi-t.github.io/"> -->
+  <script src="https://shutto-translation-development-takiguchi.s3.amazonaws.com/trans.js?id=230"></script>
+  <!-- 
+  <script>
+    __stt.on('setLang', function(event) {
+    gtag('event', 'set_lang', {
+        'send_to': 'UA-228774937-1',
+        'event_category': 'ShuttoTranslation',
+        'dimension1': event.lang,
+        'non_interaction': true
+    });
+  });
+  </script>
+  -->
+  <link rel="stylesheet" href="style.css">
+</head>
+	
+<body>
+  <!-- Google Tag Manager (noscript) -->
+<!--   <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53TPJVVF"
+      height="0" width="0" style="display:none;visibility:hidden">
+    </iframe>
+  </noscript> -->
+<!-- End Google Tag Manager (noscript) -->
+  <div id="body_main" class="font_ja">
+  CSPテスト
+  <br><br>
+
+  <div id="custom_trans_bar" class="tooltip" data-stt-langbar>
+    <a href="#" data-stt-changelang="en" data-stt-ignore>英語</a>
+    <a href="#" data-stt-changelang="zh-CN" data-stt-ignore>中国語（簡体字）</a>
+    <a href="#" data-stt-changelang="zh-TW" data-stt-ignore>中国語（繁体字）</a>
+    <a href="#" data-stt-changelang="ko" data-stt-ignore>韓国語</a>
+  </div>
+
+  <table border="2" bgcolor="#e6e6fa">
+  <tr>
+    <th width="50">No..</th>
+    <th width="200">名前？</th>
+    <th width="300">画像</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><!--本?--></td>
+    <td align="center"><img src="img/book.png" width="100" height="100" alt="本"></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>カート\t テスト</td>
+    <td align="center"><img src="img/cart.png" width="100" height="100"></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>地球' テスト</td>
+    <td align="center"><img src="img/earth.png" width="100" height="100"></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>パソコン "テスト"</td>
+    <td align="center"><img src="img/pc.png" width="100" height="100"></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>新タイトル INSERT</td>
+    <td align="center"><img src="img/tel.png" width="100" height="100"></td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>2 新タイトル戦開幕、初代「清麗」を勝ちとるのは？里見香奈女流五冠VS甲斐智美女流五段、ヒューリック杯清麗戦五番勝負の展望は？</td>
+    <td align="center"><img src="img/tel.png" width="100" height="100"></td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>スペース　テスト13</td>
+    <td align="center"><img src="img/tel.png" width="100" height="100"></td>
+  </tr>
+  </table>
+  
+  <br><br>
+  
+  <table>
+    <tr>
+      <td width="100" align="center"><a href="">ホーム</a></td>
+      <td>|</td>
+      <td width="100" align="center"><a href="">メール</a></td>
+      <td>|</td>
+      <td width="100" align="center"><a href="">電話</a></td>
+      <td>|</td>
+      <td width="100" align="center"><a href="">ヘルプ</a></td>
+      <td>|</td>
+      <td width="100" align="center"><a href="https://takiguchi-t.github.io/table1.html" class="notrans_">テーブル1（https パラメータなし）</a></td>
+      <td>|</td>
+      <td width="100" align="center"><a href="http://takiguchi-t.github.io/table1.html" class="notrans_">テーブル1（http パラメータなし）</a></td>
+      <td>|</td>
+      <td width="100" align="center"><a href="https://takiguchi-t.github.io/table1.html?test=aaa" class="notrans_">テーブル1（パラメータあり）</a></td>
+      <td>|</td>
+      <td width="100" align="center"><a href="https://takiguchi-t.github.io/table2.html">テーブル2（パラメータなし）</a></td>
+      <td>|</td>
+      <td width="100" align="center"><a href="https://takiguchi-t.github.io/table2.html?test=aaa">テーブル1（パラメータあり）</a></td>
+      <td>|</td>
+      <td width="100" align="center"><a href="https://takiguchi-t.github.io/en.html">英語ページ（https）</a></td>
+      <td>|</td>
+      <td width="100" align="center"><a href="http://takiguchi-t.github.io/en.html" class="notrans_">英語ページ（http）</a></td>
+<!--       <td>|</td>
+      <td width="100" align="center"><a href="https://takiguchi-t.github.io/table2.html" class="notrans_">半角スペース 1112</a></td> -->
+<!--       <td>|</td>
+      <td width="100" align="center"><a href="https://takiguchi-t.github.io/table2.html" class="notrans_">辞書全角スペース 1112</a></td> -->
+    </tr>
+    <tr>
+      <td width="100" align="center"><a href=""><strong>彼は斎藤 健です</strong></a></td>
+      <td>|</td>
+      <td width="100" align="center"><a href="">彼は伊藤 隆です</a></td>
+      <td>|</td>
+      <td width="100" align="center"><a href="">ネイティブ</a></td>
+      <td>|</td>
+      <td width="100" align="center"><a href="">清課堂オリジナルポストカード【4枚セット】</a></td>
+      <td>|</td>
+    </tr>
+    <tr>
+      <td width="150" align="center"><a href="">全角 スペースあり1</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">全角スペース あり 2</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">WAKO CLOTHING CO., LTD.</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">ASAHI-KASEI K.K.</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">AICOHSHA MFG. CO., LTD.:イメージ画像</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">FUJISAWA-MARUZEN CO., LTD.:イメージ画像</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">項目追加</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">アメリカ</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">カナダ</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">メキシコ</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">イギリス</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">ドイツ</a></td>
+      <td>|</td>
+    </tr>
+	  
+    <tr>
+      <td width="150" align="center"><a href="">フランス</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">ドイツ</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">オランダ</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">エジプト</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">メキシコ</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">INTEK K.K.</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">ANALOG DEVICES K.K.</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">TECNO 3 S.R.L.</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">追加テキスト0310</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">📄</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">追加テキスト03103</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">​</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">追加テキスト03131</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">​</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">追加テキスト03133</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">​</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">追加テキスト03134</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">​</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">追加テキスト03136</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">​</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">​</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">追加テキスト03141</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">追加テキスト03137</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">追加テキスト03138</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">追加テキスト03139</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">空白</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">ブランク</a></td>
+    </tr>
+    <tr>
+      <td width="150" align="center"><a href="">P.T.A</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">A!-ID</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">Montbell</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">選択</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">大学</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">高校</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">中学校</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">小学校</a></td>
+    </tr>
+    <tr>
+      <td width="150" align="center">ヌル文字&#39;</td>
+      <td>|</td>
+      <td width="150" align="center">ヌル文字&#テスト</td>
+      <td>|</td>
+      <td width="150" align="center">これは&#です</td>
+      <td>|</td>
+      <td width="150" align="center">ヌル文字確認</td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">太陽</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">水星</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">金星</a></td>
+<!--       <td>|</td>
+      <td width="150" align="center"><a href="">火星</a></td> -->
+<!--       <td>|</td>
+      <td width="150" align="center"><a href="">木星</a></td> -->
+<!--       <td>|</td>
+      <td width="150" align="center"><a href="">土星</a></td> -->
+<!--       <td>|</td>
+      <td width="150" align="center"><a href="">天王星</a></td> -->
+<!--       <td>|</td>
+      <td width="150" align="center"><a href="">海王星</a></td> -->
+    </tr>
+    <tr>
+      <td width="150" align="center"><a href="">TEST1 K.K.</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">TEST2 K.K.</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">TEST3 K.K.</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">TEST4 K.K.</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">TEST5 K.K.</a></td>
+<!--       <td>|</td>
+      <td width="150" align="center"><a href="">TEST6 K.K.</a></td> -->
+      <td>|</td>
+      <td width="150" align="center"><a href="">IPCO K.K.</a></td>
+<!--       <td>|</td>
+      <td width="150" align="center"><a href="">NIPPON BUSCH K.K.</a></td> -->
+<!--       <td>|</td>
+      <td width="150" align="center"><a href="">O.N. INDUSTRIES LTD.</a></td> -->
+    </tr>
+    <tr>
+      <td width="150" align="center"><a href="">TEST!</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">TEST?</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">TEST(</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">TEST<</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">TEST.</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">TEST/</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">TEST-</a></td>
+      <td>|</td>
+      <td width="150" align="center"><a href="">TEST'</a></td>
+    </tr>
+  </table>
+	  
+  <table>
+    <tr>
+      <th>管理費等</th>
+      <td>
+        <ul>
+          共通施設維持管理費：月額13,200円～17,820円<br>
+          建物管理費：月額8,800円～36,960円<br>
+          修繕積立金：月額1,320円～1,782円<br>
+          修繕積立一時金：660,000円～891,000円<br>
+          排水施設利用料金：年間水道使用量35m³まで年額6,600円
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th>許認可／都市計画法開発許可</th>
+      <td>
+        <ul>
+          <li>平成8年9月19日長野県指令7建第9-1号</li>
+          <li>森林法開発許可：平成8年10月1日</li>
+          <li>変更許可：平成25年1月16日</li>
+          <li>長野県指令8治第343号</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+  
+  <section>
+    <h1 class="pageTitle">お問い合わせ</h1>
+
+        
+            <p>よくあるご質問ページのご案内（解決方法）を先にご参照及びお試しください。<br />
+以下のフォームの項目を入力し、よろしければ「この内容で問い合わせる」ボタンをクリックしてください。</p>
+
+            
+            <table class="formTable">
+            <tr>
+                <th>お名前<span class="required">必須</span></th>
+                <td>
+                    <p id="name_error" class="errorMesseage"></p>
+                    <input type="text" class="input_test1" name="name" maxlength="20" size="25" value="">
+                </td>
+            </tr>
+<!--             <tr>
+                <th>メールアドレス<span class="required">必須</span></th>
+                <td>
+                <p id="email_error" class="errorMesseage"></p>
+                <input type="text" name="email" maxlength="50" size="50" value=""></td>
+            </tr> -->
+            <tr>
+                <th>お問い合わせ内容<span class="required">必須</span></th>
+                <td>
+                    <p id="content_error" class="errorMesseage"></p>
+                    <textarea wrap="off" rows="15" cols="60" maxlength="2000" name="content"></textarea>
+                    <span class="notes">※全角2000文字まであ</span>
+                </td>
+            </tr>
+            </table>
+  </section>
+    
+  <div class="code-toolbar"><pre class="language-xml line-numbers"><code class=" language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span> <span class="token attr-name">key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myInteger<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>integer<span class="token punctuation">"</span></span> <span class="token attr-name">defaultValue</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>1000<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>caption</span><span class="token punctuation">&gt;</span></span>My integer<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>caption</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>description</span><span class="token punctuation">&gt;</span></span>My integer setting<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>description</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>property</span><span class="token punctuation">&gt;</span></span></pre></code><div class="toolbar"><div class="toolbar-item"><span>XML</span></div><div class="toolbar-item"><button>Copy</button></div></div></div>
+  <span data-title="データタイトル"></span>
+	  
+  <div id="test" data-stt-ignore>
+    <p>あいうえお</p>
+    <p>かきくけこ</p>
+    <p>さしすせそ</p>
+  </div>
+  </div>
+	
+  <div id="add_trans_test1">追加翻訳テスト</div>
+	
+  <div class="inline-block-test">
+     
+    <span>ブロック1</span>
+    <span>ブロック2</span>
+    <span>ブロック3</span>
+     
+  </div>
+	
+  <div data-v-608eb70f="" class="text-trunc" style="padding-left: 0px;">
+    <span data-v-608eb70f=""><!----> <!----> 
+      <span data-v-de901a6a="" data-v-608eb70f="" class="tag tag-edc">教</span> Shutto教育
+      <span data-v-608eb70f="" class="cell-action">
+        <div data-v-608eb70f="" class="el-dropdown">
+          <span data-v-608eb70f="" class="el-dropdown-link el-dropdown-selfdefine" aria-haspopup="list" aria-controls="dropdown-menu-8849" role="button" tabindex="0">
+            <i data-v-608eb70f="" class="el-icon-more"></i>
+          </span>
+          <ul data-v-608eb70f="" class="el-dropdown-menu el-popper el-dropdown-menu--small" id="dropdown-menu-8849" style="display: none;">
+            <li data-v-608eb70f="" tabindex="-1" class="el-dropdown-menu__item"><!---->力量の詳細</li>
+          </ul>
+        </div>
+      </span>
+    </span>
+  </div>
+	
+  <div>
+    <a href="table1.html">リンクテスト1</a></td>
+    <a href="table1.html">リンクテスト2</a></td>
+    <a href="table1.html">リンクテスト3</a></td>
+  </div>
+
+  <br><br>
+
+  <tr class="request step">
+    <th lowspan="2">
+      <span class="ico_step">保育園名</span>
+    </th>
+    <td>
+      <span class="select add02">
+        <select data-stt-ignore id="nursery0" name="children[0].nurseryId">
+          <option value>−選択してください−</option>
+          <option value="1394">保育園1394</option>
+          <option value="1395">保育園1395</option>
+          <option value="1449">保育園1449</option>
+        </select>
+      </span>
+    </td>
+  </tr>
+
+
+  <div id="js-modal-nursery0" class="confirmation_modal" style="display: none;">
+    <div id="js-modal-close-nursery0" class="confirmation_modal_bg"></div>
+    <div class="confirmation_modal_content">
+      <p id="js-confirmation-nursery0" class="txtC mB20"></p>
+      <div class="wrap_modalButton">
+        <button id="js-modal-close-yes-nursery0" class="modalButton" type="button">はい</button>
+        <button id="js-modal-close-no-nursery0" class="modalButton" type="button">いいえ</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="test1">
+    <p class="test_trunk8">テスト1テスト2テスト3テスト4テスト5テスト6テスト7テスト8テスト9テスト10テスト11テスト12テスト13テスト14テスト15テスト16テスト17テスト18テスト19テスト20テスト21テスト22テスト23テスト24テスト25</p>
+  </div>
+
+  <br><br>
+
+  <div class="lang_get_api_test">
+    <p>言語取得APIテスト</p>
+    <p>※言語取得APIが正常に動作している場合、文字色が赤になる</p>
+  </div>
+
+  <div class="sec">
+    <strong>メンバーシップサイト名</strong>
+    <br>
+    YELLOW MAGAZINE＋
+    <br>
+    <br><strong>事業者名</strong><br />株式会社アミューズ
+    <br>
+    <br>
+    <strong>所在地</strong>
+    <br>
+    山梨県南都留郡富士河口湖町西湖９９７<br><br><strong>代表者</strong><br>代表取締役 中西正樹<br><br><strong>お問い合わせ</strong><br>お問い合わせは以下のフォームよりお願いいたします。<br>https://fc.dps.amuse.co.jp/yellowmagagine/qa/contact<br><br><strong>電話番号</strong><br>03-5457-3488<br><br><strong>内容</strong><br>「会員特典」に記載のサービス提供<br><br><strong>提供時期</strong><br>『YELLOW MAGAZINE＋』おプレミアム<br>入会が承認された月から1年間（以後1年ごとの継続可）とします。<br><br> 『YELLOW MAGAZINE＋』おスタンダード<br>・docomo d払い、auかんたん決済／au WALLET／UQ mobile／ソフトバンクまとめて支払い・ワイモバイルまとめて支払い、クレジットカード決済<br>入会手続きが完了してから入会した月の月末までが有効期限となります。<br>当社所定の退会手続きを行わない限り、月額費が自動的に発生します（以下「自動継続」といいます）。<br><br><strong>料金等</strong><br>『YELLOW MAGAZINE＋』おプレミアム<br> 年会費 5,500円(税込)<br>事務手数料 250円(税込)<br><br>『YELLOW MAGAZINE＋』おスタンダード<br>月額費 550円(税込)<br>※郵便局・銀行ATM、もしくはインターネットバンキングを利用してのお支払いの場合には、ご利用の支払方法により、別途各社が定める手数料が必要となる場合がございます。<br><br><strong>支払時期</strong><br>『YELLOW MAGAZINE＋』おプレミアム<br>入会時 ： 随時（年会費、事務手数料および申込手数料を一括してお支払いいただきます。）<br>継続時 ： 会員期限満了3ヶ月前から満了月の末日までに、年会費、事務手数料および申込手数料をお支払いいただきます。<br>※自動継続を設定の場合には、当社所定の手続きにより自動継続の設定を解除しなければ、会員資格の有効期限月の１日に翌年の年会費及び事務手数料のお支払いが確定します。<br><br>『YELLOW MAGAZINE＋』おスタンダード<br>入会時 ： 随時(月額費をお支払いいただきます。)<br>継続時 ： 自動更新 ※ 支払方法も必ずご覧ください。<br><br><strong>支払方法</strong><br>『YELLOW MAGAZINE＋』おプレミアム<br>クレジットカード決済・コンビニ払込・Pay-easy<br><br>『YELLOW MAGAZINE＋』おスタンダード<br>docomo d払い・auかんたん決済／au WALLET／UQ mobile・ソフトバンクまとめて支払い・ワイモバイルまとめて支払い、クレジットカード決済<br><br>※継続時の支払時期<br>・docomo d払い、auかんたん決済／au WALLET／UQ mobile<br>毎月1日、キャリアの定めに従い請求されます。<br>・ソフトバンクまとめて支払い・ワイモバイルまとめて支払い<br>毎月1回、キャリアの定めに従い請求されます。<br>・クレジットカード決済<br>毎月1回、クレジットカードカード会社の定めに従い引き落とされます。<br><br><strong>解約条件・解約方法</strong><br>『YELLOW MAGAZINE＋』おプレミアム<br>入会申込完了後は、入会の撤回及び会員資格の有効期限前のご解約はすることができません。<br>※自動継続を設定の場合には、会員資格の有効期限の前月末日までに、<br>【MY PAGE】内「継続手続き」にアクセスのうえ自動継続の設定を解除をしなければ、会員資格の有効期限月の1日に翌年の年会費及び事務手数料のお支払いが確定します。<br><br>『YELLOW MAGAZINE＋』おスタンダード<br>会員限定サイト内【MY PAGE】より、ご自身でお手続きください。<br>※解約手続き完了後、即日ご利用いただけなくなります。<br><br><br><strong>その他</strong><br>本表示に定めの無い事項については、「会員規約」 をご参照ください。
+  </div>
+
+  <br>
+  <h3 class="font-serif tit_card fw-bolder text-decoration-none fs-3 mt-2 mb-3"><span>甲本晃啓</span>
+    <span class="small font-sanse">（こうもと・あきひろ）</span>
+  </h3>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+<!-- ↓body閉じタグ直前でjQueryを読み込む -->
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/trunk8.js"></script>
+<script>
+  $(function () {
+    const idPrefix = "#nursery" + 0;
+    const $nursery = $(idPrefix);
+	  
+    $nursery.on("change", function () {
+      viewNurseryModal($nursery, 0);
+    });
+	  
+    $("#js-modal-close-yes-nursery" + 0).on('click', function () {
+      $("#js-modal-nursery" + 0).hide();
+    });
+    $("#js-modal-close-no-nursery" + 0).on('click', function () {
+      $("#js-modal-nursery" + 0).hide();
+    });
+	  
+    function viewNurseryModal(nursery, index) {
+      const value = nursery.val();
+      if (value != "") {
+        const selectedNurseryName = nursery.children('option:selected').text();
+        $("#js-confirmation-nursery" + index).html("<p class='mB20'>ご利用の保育園は以下でお間違いないでしょうか？</p><p data-stt-ignore class='emphasis'>「" + selectedNurseryName + "」</p>");
+//         $("#js-confirmation-nursery" + index).html("<p class='mB20'>ご利用の保育園は以下でお間違いないでしょうか？</p><p class='emphasis'>「" + selectedNurseryName + "」</p>");
+//         $("#js-confirmation-nursery" + index).append("<p class='mB20'>ご利用の保育園は以下でお間違いないでしょうか？</p>");
+//         $("#js-confirmation-nursery" + index).append("<p data-stt-ignore class='emphasis'>「" + selectedNurseryName + "」</p>");
+        $('#js-modal-nursery' + index).show();
+      }
+    }
+	  
+  });
+	  
+  $(function() {
+    $('.test_trunk8').trunk8({
+      lines: 1,   //行数を指定、未設定の場合１行
+      fill: '...' //省略時の末尾に付与させる文字を指定（無ければ「…」）
+    });
+  });
+	  
+  
+</script>
+
+<!-- <script>
+  __stt.on('selectLang', function(event) {
+    console.log(`【__stt.on】event.lang: ${event.lang}`)
+    if (event.lang !== 'ja') {
+      alert(`言語選択イベントAPI`)
+    }
+  });
+</script> -->
+
+<!-- <script>
+  __stt.get('lang', function(lang) {
+    console.log(`【__stt.get】lang: ${lang}`)
+    $(".lang_get_api_test").css('color', '#f00');
+  });
+</script> -->
+
+<!-- <script>
+  window.addEventListener('load', (event) => {
+  console.log('ページが完全に読み込まれました');
+  document.getElementsByClassName('stt-lang-select')[0].style.position = 'absolute'
+  document.getElementsByClassName('stt-lang-select')[0].style.top = 50
+  document.getElementsByClassName('stt-lang-select')[0].style.width = 100
+  });
+</script> -->
+
+</body>
+</html>
