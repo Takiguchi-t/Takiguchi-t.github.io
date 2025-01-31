@@ -24,7 +24,15 @@
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript">
       function changeElement() {
-        var changeHtml = '<script type="text/javascript"></script><div class="product-after"><div class="c-mage"><img src="img/laptop-1839876_1280.jpg" width="30%"><p>動的に変更されたテキストです。</p></div></div>'
+        var changeHtml = `
+                          <script type="text/javascript"></script>
+                          <div class="product-after">
+                            <div class="c-mage">
+                              <img src="img/laptop-1839876_1280.jpg" width="30%">
+                              <p>動的に変更されたテキストです。</p>
+                            </div>
+                          </div>
+                         `
         $('.change-element').empty().html(changeHtml)
       }
     </script>
