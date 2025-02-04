@@ -49,6 +49,16 @@
         </div>  
       </div>
 
+      <div class="change-element-5">
+        <script type="text/javascript"></script>
+        <div class="product-before">
+          <div class="c-mage">
+            <img src="img/code-820275_1280.jpg" width="10%">
+            <p>変更前テキスト5</p>
+          </div>
+        </div>
+      </div>
+
     </div>
     <p>動的に変更される要素 終了</p>
     <br><br>
@@ -59,18 +69,21 @@
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript">
       function changeElement() {
-        // 1階層目：<script>と<div>
+        // 1階層目：<script>と<div>　→　追加翻訳されない
         var changeHtml1 = `<script type="text/javascript"/><div class="product-after"><div class="c-mage"><img src="img/laptop-1839876_1280.jpg" width="10%"><p>動的に変更されたテキスト1</p><p>この要素は「要素変更」ボタン押下によって変更されました。</p></div></div>`
         $('.change-element-1').empty().html(changeHtml1)
-        // 1階層目：<style>と<div>
+        // 1階層目：<style>と<div>　→　追加翻訳されない
         var changeHtml2 = `<style></style><div class="product-after"><div class="c-mage"><img src="img/laptop-1839876_1280.jpg" width="10%"><p>動的に変更されたテキスト2</p><p>この要素は「要素変更」ボタン押下によって変更されました。</p></div></div>`
         $('.change-element-2').empty().html(changeHtml2)
-        // 1階層目：<div>、2階層目：<script>と<div>
+        // 1階層目：<div>、2階層目：<script>と<div>　→　追加翻訳される
         var changeHtml3 = `<div class="product-after"><script type="text/javascript"/><div class="c-image"><img src="img/laptop-1839876_1280.jpg" width="10%"><p>動的に変更されたテキスト3</p><p>この要素は「要素変更」ボタン押下によって変更されました。</p></div></div>`
         $('.change-element-3').empty().html(changeHtml3)
-        // 1階層目：<div>（読込済HTMLに<script>あり）、2階層目：<div>
+        // 1階層目：<div>（読込済HTMLに<script>あり）、2階層目：<div>　→　追加翻訳される
         var changeHtml4 = `<div class="product-after"><div class="c-image"><img src="img/laptop-1839876_1280.jpg" width="10%"><p>動的に変更されたテキスト4</p><p>この要素は「要素変更」ボタン押下によって変更されました。</p></div></div>`
         $('.change-element-4').empty().html(changeHtml4)
+        // 1階層目：<script>と<div>（連続した要素）　→　追加翻訳されない
+        var changeHtml5 = `<div class="c-mage"><img src="img/laptop-1839876_1280.jpg" width="10%"></div><div class="product-after">今日の</div><div class="product-after">天気は</div><div class="product-after">晴れです</div><script type="text/javascript"/><div class="product-after">明日の</div><div class="product-after">天気は</div><div class="product-after">雨です</div>`
+        $('.change-element-5').empty().html(changeHtml5)
       }
     </script>
      
