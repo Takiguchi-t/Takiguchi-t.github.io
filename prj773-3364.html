@@ -82,7 +82,7 @@
         var changeHtml4 = `<div class="product-after"><div class="c-image"><img src="img/laptop-1839876_1280.jpg" width="10%"><p>動的に変更されたテキスト4</p><p>この要素は「要素変更」ボタン押下によって変更されました。</p></div></div>`
         $('.change-element-4').empty().html(changeHtml4)
         // 1階層目：<script>と<div>（連続した要素）　→　追加翻訳されない
-        var changeHtml5 = `<div class="c-mage"><img src="img/laptop-1839876_1280.jpg" width="10%"></div><div class="product-after">今日の</div><div class="product-after">天気は</div><div class="product-after">晴れです</div><script type="text/javascript"/><div class="product-after">明日の</div><div class="product-after">天気は</div><div class="product-after">雨です</div>`
+        var changeHtml5 = `<div class="c-mage"><img src="img/laptop-1839876_1280.jpg" width="10%"></div><span class="product-after">今日の</span><span class="product-after">天気は</span><span class="product-after">晴れです</span><script type="text/javascript"/><span class="product-after">明日の</span><span class="product-after">天気は</span><span class="product-after">雨です</span>`
         $('.change-element-5').empty().html(changeHtml5)
       }
     </script>
