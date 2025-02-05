@@ -96,19 +96,19 @@
         var changeHtml2 = `<style></style><div class="product-after"><div class="c-mage"><img src="img/laptop-1839876_1280.jpg" width="10%"><p>動的に変更されたテキスト2</p><p>この要素は「要素変更」ボタン押下によって変更されました。</p></div></div>`
         $('.change-element-2').empty().html(changeHtml2)
         // 翻訳対象外タグが翻訳対象タグの後にあるケース（1階層目：<div>と<script>　→　追加翻訳されない）
-        var changeHtml3 = `<script type="text/javascript"/><div class="product-after"><div class="c-mage"><img src="img/laptop-1839876_1280.jpg" width="10%"><p>動的に変更されたテキスト1</p><p>この要素は「要素変更」ボタン押下によって変更されました。</p></div></div>`
+        var changeHtml3 = `<script type="text/javascript"/><div class="product-after"><div class="c-mage"><img src="img/laptop-1839876_1280.jpg" width="10%"><p>動的に変更されたテキスト3</p><p>この要素は「要素変更」ボタン押下によって変更されました。</p></div></div>`
         $('.change-element-3').empty().html(changeHtml3)
         // 翻訳対象外タグが翻訳対象タグの間にあるケース（1階層目：<div>と<script>と<div>（連続した要素）　→　追加翻訳されない）
         var changeHtml4 = `<div class="c-mage"><img src="img/laptop-1839876_1280.jpg" width="10%"></div><span class="product-after">今日の</span><span class="product-after">天気は</span><span class="product-after">晴れです。</span><script type="text/javascript"/><span class="product-after">明日の</span><span class="product-after">天気は</span><span class="product-after">雨です。</span>`
         $('.change-element-4').empty().html(changeHtml4)
         // 翻訳対象外タグが存在しないケース（1階層目：<div>、2階層目：<script>と<div>　→　追加翻訳される）
-        var changeHtml5 = `<div class="product-after"><script type="text/javascript"/><div class="c-image"><img src="img/laptop-1839876_1280.jpg" width="10%"><p>動的に変更されたテキスト3</p><p>この要素は「要素変更」ボタン押下によって変更されました。</p></div></div>`
+        var changeHtml5 = `<div class="product-after"><script type="text/javascript"/><div class="c-image"><img src="img/laptop-1839876_1280.jpg" width="10%"><p>動的に変更されたテキスト5</p><p>この要素は「要素変更」ボタン押下によって変更されました。</p></div></div>`
         $('.change-element-5').empty().html(changeHtml5)
         // 翻訳対象外タグが存在しないケース（1階層目：<div>（読込済HTMLに<script>あり）、2階層目：<div>　→　追加翻訳される）
-        var changeHtml6 = `<div class="product-after"><div class="c-image"><img src="img/laptop-1839876_1280.jpg" width="10%"><p>動的に変更されたテキスト4</p><p>この要素は「要素変更」ボタン押下によって変更されました。</p></div></div>`
+        var changeHtml6 = `<div class="product-after"><div class="c-image"><img src="img/laptop-1839876_1280.jpg" width="10%"><p>動的に変更されたテキスト6</p><p>この要素は「要素変更」ボタン押下によって変更されました。</p></div></div>`
         $('.change-element-6').empty().html(changeHtml6)
         // 翻訳対象外タグのみで構成されるケース（1階層目：<script>と<style>　→　追加翻訳されない）
-        var changeHtml7 = `<script type="text/javascript"/><style>翻訳対象外タグ内のテキスト</style>`
+        var changeHtml7 = `<script type="text/javascript"/><style>翻訳対象外タグ内のテキスト7</style>`
         $('.change-element-7').empty().html(changeHtml7)
         
       }
