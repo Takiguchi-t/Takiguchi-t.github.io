@@ -121,6 +121,58 @@
         </div>
       </div>
 
+      <hr>
+
+      <div class="change-element-12">
+        <script type="text/javascript"></script>
+        <div class="product-before">
+          <div class="c-mage">
+            <img src="img/code-820275_1280.jpg" width="10%">
+            <p>変更前テキスト12</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="change-element-13">
+        <script type="text/javascript"></script>
+        <div class="product-before">
+          <div class="c-mage">
+            <img src="img/code-820275_1280.jpg" width="10%">
+            <p>変更前テキスト13</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="change-element-14">
+        <script type="text/javascript"></script>
+        <div class="product-before">
+          <div class="c-mage">
+            <img src="img/code-820275_1280.jpg" width="10%">
+            <p>変更前テキスト14</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="change-element-15">
+        <script type="text/javascript"></script>
+        <div class="product-before">
+          <div class="c-mage">
+            <img src="img/code-820275_1280.jpg" width="10%">
+            <p>変更前テキスト15</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="change-element-16">
+        <script type="text/javascript"></script>
+        <div class="product-before">
+          <div class="c-mage">
+            <img src="img/code-820275_1280.jpg" width="10%">
+            <p>変更前テキスト16</p>
+          </div>
+        </div>
+      </div>
+      
     </div>
     <p>動的に変更される要素 終了</p>
     <br><br>
@@ -167,6 +219,22 @@
         // 翻訳対象外タグではなくignore属性が含まれる（翻訳対象タグの間）
         var changeHtml11 = `<div class="product-after"><div class="c-mage"><img src="img/laptop-1839876_1280.jpg" width="10%"><p>動的に変更されたテキスト10</p><p>【前】この要素は「要素変更」ボタン押下によって変更されました。</p></div><div class="ignore-test" data-stt-ignore>翻訳しないテキスト</div><div class="product-after"><div class="c-mage"><img src="img/laptop-1839876_1280.jpg" width="10%"><p>動的に変更されたテキスト11</p><p>【後】この要素は「要素変更」ボタン押下によって変更されました。</p></div>`
         $('.change-element-11').empty().html(changeHtml11)
+
+        // <noscript>が含まれる
+        var changeHtml12 = `<noscript></noscript><div class="product-after"><div class="c-mage"><img src="img/laptop-1839876_1280.jpg" width="10%"><p>動的に変更されたテキスト12</p><p>この要素は「要素変更」ボタン押下によって変更されました。</p></div>`
+        $('.change-element-12').empty().html(changeHtml12)
+        // <object>が含まれる
+        var changeHtml13 = `<object></object><div class="product-after"><div class="c-mage"><img src="img/laptop-1839876_1280.jpg" width="10%"><p>動的に変更されたテキスト13</p><p>この要素は「要素変更」ボタン押下によって変更されました。</p></div>`
+        $('.change-element-13').empty().html(changeHtml13)
+        // <iframe>が含まれる
+        var changeHtml14 = `<iframe></iframe><div class="product-after"><div class="c-mage"><img src="img/laptop-1839876_1280.jpg" width="10%"><p>動的に変更されたテキスト14</p><p>この要素は「要素変更」ボタン押下によって変更されました。</p></div>`
+        $('.change-element-14').empty().html(changeHtml14)
+        // <code>が含まれる
+        var changeHtml15 = `<code></code><div class="product-after"><div class="c-mage"><img src="img/laptop-1839876_1280.jpg" width="10%"><p>動的に変更されたテキスト15</p><p>この要素は「要素変更」ボタン押下によって変更されました。</p></div>`
+        $('.change-element-15').empty().html(changeHtml15)
+        // <svg>が含まれる
+        var changeHtml16 = `<svg></svg><div class="product-after"><div class="c-mage"><img src="img/laptop-1839876_1280.jpg" width="10%"><p>動的に変更されたテキスト16</p><p>この要素は「要素変更」ボタン押下によって変更されました。</p></div>`
+        $('.change-element-16').empty().html(changeHtml16)
         
       }
     </script>
