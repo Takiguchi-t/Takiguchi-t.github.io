@@ -91,6 +91,36 @@
         </div>
       </div>
 
+      <div class="change-element-9">
+        <script type="text/javascript"></script>
+        <div class="product-before">
+          <div class="c-mage">
+            <img src="img/code-820275_1280.jpg" width="10%">
+            <p>変更前テキスト9</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="change-element-10">
+        <script type="text/javascript"></script>
+        <div class="product-before">
+          <div class="c-mage">
+            <img src="img/code-820275_1280.jpg" width="10%">
+            <p>変更前テキスト10</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="change-element-11">
+        <script type="text/javascript"></script>
+        <div class="product-before">
+          <div class="c-mage">
+            <img src="img/code-820275_1280.jpg" width="10%">
+            <p>変更前テキスト11</p>
+          </div>
+        </div>
+      </div>
+
     </div>
     <p>動的に変更される要素 終了</p>
     <br><br>
@@ -128,6 +158,15 @@
         // 本番類似データ（WESTERモール）
         var changeHtml8 = `<script type="text/javascript"><\/script><script type="text/javascript"><\/script><script type="text/javascript"><\/script><div class="c-init p-card -product"><div class="c-link"><a href="https://takiguchi-t.github.io/" class="c-link__item"><div class="c-img"><img src="img/laptop-1839876_1280.jpg" width="10%"></div><div class="c-headline">【サクッ、フワッ！丁字麩のラスク】滋賀の丁字麩おふらすく（5枚入）</div><div class="c-seller">工房しゅしゅ</div><div class="c-value" data-stt-ignore>594円</div></div><div class="c-area"><span class="c-name">滋賀</span></div></div>`
         $('.change-element-8').empty().html(changeHtml8)
+        // 翻訳対象外タグではなくignore属性が含まれる（翻訳対象タグの前）
+        var changeHtml9 = `<div class="ignore-test" data-stt-ignore>翻訳しないテキスト</div><div class="product-after"><div class="c-mage"><img src="img/laptop-1839876_1280.jpg" width="10%"><p>動的に変更されたテキスト8</p><p>この要素は「要素変更」ボタン押下によって変更されました。</p></div></div>`
+        $('.change-element-9').empty().html(changeHtml9)
+        // 翻訳対象外タグではなくignore属性が含まれる（翻訳対象タグの後）
+        var changeHtml10 = `<div class="product-after"><div class="c-mage"><img src="img/laptop-1839876_1280.jpg" width="10%"><p>動的に変更されたテキスト9</p><p>この要素は「要素変更」ボタン押下によって変更されました。</p></div></div><div class="ignore-test" data-stt-ignore>翻訳しないテキスト</div>`
+        $('.change-element-10').empty().html(changeHtml10)
+        // 翻訳対象外タグではなくignore属性が含まれる（翻訳対象タグの間）
+        var changeHtml11 = `<div class="product-after"><div class="c-mage"><img src="img/laptop-1839876_1280.jpg" width="10%"><p>動的に変更されたテキスト10</p><p>【前】この要素は「要素変更」ボタン押下によって変更されました。</p></div><div class="ignore-test" data-stt-ignore>翻訳しないテキスト</div><div class="product-after"><div class="c-mage"><img src="img/laptop-1839876_1280.jpg" width="10%"><p>動的に変更されたテキスト11</p><p>【後】この要素は「要素変更」ボタン押下によって変更されました。</p></div>`
+        $('.change-element-11').empty().html(changeHtml11)
         
       }
     </script>
