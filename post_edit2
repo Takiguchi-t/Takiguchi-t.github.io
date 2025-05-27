@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>ポストエディットテストページ2</title>
+    <script src="https://shutto-translation-development-takiguchi.s3.amazonaws.com/trans.js?id=522"></script>
+  </head>
+  <body>
+    <p>こんにちは</p>
+    <p>こんばんは</p>
+    <p>おやすみなさい</p>
+  </body>
+</html>
