@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html data-test="test1">
 <head>
+  <script src="https://staging-d.ea-shutto-translation.net/trans.js?id=1338"></script>
+  <script>
+    __stt.on('setLangHit', function(event) {
+      gtag('event','shuttotrans_set_lang', {
+        'shuttotrans_lang': event.lang
+      });
+    });
+  </script>
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -12,14 +20,6 @@
   <meta charset="UTF-8">
   <title>テストページ</title> 
 <!--   <link rel="canonical" href="https://takiguchi-t.github.io/"> -->
-  <script src="https://staging-d.ea-shutto-translation.net/trans.js?id=1338"></script>
-  <script>
-  __stt.on('setLangHit', function(event) {
-    gtag('event','shuttotrans_set_lang', {
-      'shuttotrans_lang': event.lang
-    });
-  });
-</script>
 <!--   <script src="https://shutto-translation-development-takiguchi.s3.amazonaws.com/trans.js?id=714"></script> -->
 <!--   <script src="https://staging-d.ea-shutto-translation.net/trans.js?id=1152"></script> -->
   <!-- 
